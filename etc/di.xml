@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="OuterEdge_ContainerGroup::abstractBlockPlugin" type="OuterEdge\ContainerGroup\View\Element\AbstractBlockPlugin" sortOrder="1"/>
+    </type>
+    <type name="Magento\Framework\View\Layout\Generator\Container">
+        <plugin name="OuterEdge_ContainerGroup::generatorContainerPlugin" type="OuterEdge\ContainerGroup\View\Layout\Generator\ContainerPlugin" sortOrder="1"/>
+    </type>
+    <type name="Magento\Framework\View\Layout\Reader\Container">
+        <plugin name="OuterEdge_ContainerGroup::readerContainerPlugin" type="OuterEdge\ContainerGroup\View\Layout\Reader\ContainerPlugin" sortOrder="1"/>
+    </type>
+</config>
