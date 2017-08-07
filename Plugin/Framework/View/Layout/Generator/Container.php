@@ -1,16 +1,16 @@
 <?php
 
-namespace OuterEdge\ContainerGroup\View\Layout\Generator;
+namespace OuterEdge\ContainerGroup\Plugin\Framework\View\Layout\Generator;
 
-use Magento\Framework\View\Layout\Generator\Container;
+use Magento\Framework\View\Layout\Generator\Container as GeneratorContainer;
 
-class ContainerPlugin
+class Container
 {
     const CONTAINER_OPT_GROUP  = 'group';
     const CONTAINER_OPT_BEFORE = 'before';
     const CONTAINER_OPT_AFTER  = 'after';
 
-    public function beforeGenerateContainer(Container $subject, $structure, $elementName, $options)
+    public function beforeGenerateContainer(GeneratorContainer $subject, $structure, $elementName, $options)
     {
         if (!empty($options[self::CONTAINER_OPT_GROUP])) {
             $structure->addToParentGroup($elementName, $options[self::CONTAINER_OPT_GROUP]);

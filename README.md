@@ -1,2 +1,5 @@
-# magento-container-group-module
-Magento Container Group Module by outer/edge
+outer/edge Magento Container Group Module
+============================================
+
+
+[![Build Status](https://travis-ci.org/outeredge/magento-container-group-module.svg?branch=master)](https://travis-ci.org/outeredge/magento-container-group-module)

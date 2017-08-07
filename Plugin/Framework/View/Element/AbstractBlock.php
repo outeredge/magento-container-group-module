@@ -1,12 +1,12 @@
 <?php
 
-namespace OuterEdge\ContainerGroup\View\Element;
+namespace OuterEdge\ContainerGroup\Plugin\Framework\View\Element;
 
-use Magento\Framework\View\Element\AbstractBlock;
+use Magento\Framework\View\Element\AbstractBlock as ElementAbstractBlock;
 
-class AbstractBlockPlugin
+class AbstractBlock
 {
-    public function aroundGetChildData(AbstractBlock $subject, callable $proceed, $alias, $key = '')
+    public function aroundGetChildData(ElementAbstractBlock $subject, callable $proceed, $alias, $key = '')
     {
         $returnValue = $proceed($alias, $key);
 

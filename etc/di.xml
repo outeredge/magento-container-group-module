@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\View\Element\AbstractBlock">
-        <plugin name="OuterEdge_ContainerGroup::abstractBlockPlugin" type="OuterEdge\ContainerGroup\View\Element\AbstractBlockPlugin" sortOrder="1"/>
+        <plugin name="OuterEdge_ContainerGroup::elementAbstractBlockPlugin" type="OuterEdge\ContainerGroup\Plugin\Framework\View\Element\AbstractBlock"/>
     </type>
     <type name="Magento\Framework\View\Layout\Generator\Container">
-        <plugin name="OuterEdge_ContainerGroup::generatorContainerPlugin" type="OuterEdge\ContainerGroup\View\Layout\Generator\ContainerPlugin" sortOrder="1"/>
+        <plugin name="OuterEdge_ContainerGroup::generatorContainerPlugin" type="OuterEdge\ContainerGroup\Plugin\Framework\View\Layout\Generator\Container"/>
     </type>
     <type name="Magento\Framework\View\Layout\Reader\Container">
-        <plugin name="OuterEdge_ContainerGroup::readerContainerPlugin" type="OuterEdge\ContainerGroup\View\Layout\Reader\ContainerPlugin" sortOrder="1"/>
+        <plugin name="OuterEdge_ContainerGroup::readerContainerPlugin" type="OuterEdge\ContainerGroup\Plugin\Framework\View\Layout\Reader\Container"/>
     </type>
     <preference for="Magento\Framework\View\Layout\Data\Structure" type="OuterEdge\ContainerGroup\View\Layout\Data\Structure"/>
 </config>

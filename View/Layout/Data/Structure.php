@@ -11,7 +11,7 @@ class Structure extends MagentoStructure
         $parentId = $this->getParentId($childId);
         $group = $this->_elements[$parentId][self::GROUPS][$groupName];
 
-        $sortedGroup = array();
+        $sortedGroup = [];
         foreach ($group as $elementName) {
             if ($elementName === $before) {
                 $sortedGroup[$childId] = $childId;
@@ -29,7 +29,7 @@ class Structure extends MagentoStructure
         $parentId = $this->getParentId($childId);
         $group = $this->_elements[$parentId][self::GROUPS][$groupName];
 
-        $sortedGroup = array();
+        $sortedGroup = [];
         foreach ($group as $elementName) {
             $sortedGroup[$elementName] = $elementName;
             if ($elementName === $after) {
